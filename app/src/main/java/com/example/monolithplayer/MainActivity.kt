@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mp: MediaPlayer
     private var totalTime: Int = 0
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -114,12 +115,12 @@ class MainActivity : AppCompatActivity() {
         if (mp.isPlaying) {
             // Stop
             mp.pause()
-            playBtn.setBackgroundResource(R.drawable.play)
+            playBtn.setBackgroundResource(R.drawable.playred)
 
         } else {
             // Start
             mp.start()
-            playBtn.setBackgroundResource(R.drawable.stop)
+            playBtn.setBackgroundResource(R.drawable.stopred)
 
         }
 
